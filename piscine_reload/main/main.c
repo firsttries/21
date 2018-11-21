@@ -12,16 +12,15 @@
 
 #include <stdio.h>
 #include <string.h>
-
-int		ft_strlen(char *str);
+#include <stdlib.h>
 
 int	main(void)
 {
-	int a, b;
-	char *str;
-	//printf("%d\n", a);
-	a = strcmp("");
-	b = ft_strlen("");
-	printf("%d, %d\n", a, b);
+	char str[11] = "0123456789";
+	char *istr;
+
+	istr = strdup (str);
+	printf("Дубликат - %s\n", istr);
+	free (istr);
 	return 0;
 }
