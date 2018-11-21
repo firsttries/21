@@ -1,0 +1,1 @@
+ifconfig | grep 'ether 78' | sed -e s/'ether '//g
